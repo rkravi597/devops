@@ -11,7 +11,7 @@ public class NumberWords {
 	        return "";
 	    } 
 	    else if(number == 0){
-	    	System.out.println( "Exiting\n"); 
+	    	System.out.println( "Stopping the app\n"); 
 	    	return "0";
 	    }
 	    else if (length > 3) { 
