@@ -16,7 +16,7 @@ public final class NumberWordsApplication {
 	public void execute() {
 		while( true ) {
 			try {
-				System.out.print( "Enter number (0 to exit): " ) ;
+				System.out.print( "Input : 0 to stop the app: " ) ;
 				String value = reader.readLine() ;
 				int number = Integer.parseInt( value ) ;
 				String inWords = numberWords.toWords(number);
