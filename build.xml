@@ -35,7 +35,7 @@
       <manifestclasspath property="manifest.classpath" jarfile="${jar.file}">
          <classpath refid="class.path"/>
       </manifestclasspath>
-      <jar destfile="build" jarfile="${jar}" basedir="bin">
+      <jar destfile="bin/Numbers.jar" jarfile="${jar}" basedir="bin">
          <manifest>
             <attribute name="Main-Class" value="${main-class}"/>
             <attribute name="Class-Path" value="${manifest.classpath}"/>
