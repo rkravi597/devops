@@ -1,7 +1,7 @@
 <project name="Numbers" default="compile" basedir=".">
    <description>Project build file</description>
    <property name="jar" value="Numbers.jar"/>
-   <property name="main-class" value="src.devops.numbers.NumberWordsApplication"/>
+   <property name="main-class" value="devops.numbers.NumberWordsApplication"/>
    <path id="class.path">
       <fileset dir="lib">
          <include name="**/*.jar"/>
