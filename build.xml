@@ -10,6 +10,7 @@
    <target name="init">
       <mkdir dir="bin"/>
       <mkdir dir="report"/>
+      <mkdir dir="artifacts"/>
    </target>
    <target name="compile" depends="init">
       <javac srcdir="src" destdir="bin" includeantruntime="false">
@@ -35,12 +36,15 @@
       <manifestclasspath property="manifest.classpath" jarfile="${jar.file}">
          <classpath refid="class.path"/>
       </manifestclasspath>
-      <jar destfile="bin/Numbers.jar" jarfile="${jar}" basedir="bin">
+      <!--<jar destfile="artifacts/Numbers.jar" jarfile="${jar}" basedir="bin">-->
+      <echo>Creating the artifact</echo>
+      <jar destfile="artifacts/Numbers.jar">
          <manifest>
             <attribute name="Main-Class" value="${main-class}"/>
             <attribute name="Class-Path" value="${manifest.classpath}"/>
          </manifest>
       </jar>
+      <echo>Artifact is created</echo>
    </target>
    <target name="clean">
       <delete dir="bin"/>
